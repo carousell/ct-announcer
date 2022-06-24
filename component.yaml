@@ -1,0 +1,19 @@
+# see more at: https://git.chotot.org/sre/backstage/blob/master/org/template-component.yaml
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: java-spring
+  description: test
+
+  labels:
+    system: ct-announcer-test
+
+  annotations:
+    GitlabRepository: https://github.com/carousell/ct-announcer
+    Grafana: java-spring
+
+spec:
+  type: service
+  lifecycle: developing
+  owner: group:thinh.nguyenduc@chotot.vn
+  generatedWith: basic-template
